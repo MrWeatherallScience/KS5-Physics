@@ -3,15 +3,18 @@
 %\geometry{showframe}% for debugging purposes -- displays the margins
 
 \usepackage{amsmath}
+\usepackage{siunitx}
+\def\SP#1{\textsuperscript{#1}}
+\def\SB#1{\textsubscript{#1}}
 
 % Set up the images/graphics package
 \usepackage{graphicx}
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{graphics/}}
 
-\title{Physics stuff}
-\author{Alex Weatherall}
-%\date{24 January 2009}  % if the \date{} command is left out, the current date will be used
+\title{Physics - 101}
+\author{Mr. Weatherall}
+\date{15 February 2015}  % if the \date{} command is left out, the current date will be used
 
 % The following package makes prettier tables.  We're all about the bling!
 \usepackage{booktabs}
@@ -46,10 +49,10 @@
 \maketitle% this prints the handout title, author, and date
 
 \begin{abstract}
-\noindent This topic covers the basics of Physics! Mechanics and stuff etc.
+\noindent Astronomy...
 \end{abstract}
 
-\section{Learning Objectives}
+\section{Topic Objectives}
 By the end of this topic you should be able to:
 \begin{itemize}
 \item State something
@@ -59,9 +62,9 @@ By the end of this topic you should be able to:
 
 \pagebreak
 
-\section{Topic 1}
+\section{Astronomy}
 
-\newthought{A major advantage of Physics}, is that it is \textit{AwESomE}\sidenote{It really really is.}, and I think I'm going to be able to use LateX to produce my notes.
+\newthought{The study of Astronomy}, is that it is \emph{AwesomE}\sidenote{It really really is.}, and I think I'm going to be able to use \LaTeX to produce my notes.
 
 \subsection{Sub topic 1}
 
@@ -81,11 +84,11 @@ There are hundreds, if not thousands of things to learn. There are hundreds, if 
   \centering
   \begin{tabular}{lll}
     \toprule
-    Voltage / V & Current / I & Resistance / $\Omega$ \\
+    Voltage / \emph{V} & Current / \emph{I} & Resistance / \emph{$\Omega$} \\
     \midrule
-    1.0 & 2.0 & 0.5 \\
-    2.0 & 4.0 & 0.5 \\
-    3.0 & 6.0 & 0.5 \\
+    1.0 & 2.0 & \num{5e-1} \\
+    2.0 & 4.0 & \num{5e-1} \\
+    3.0 & 6.0 & \num{5e-1} \\
     \bottomrule
   \end{tabular}
   \caption{Resistance is futile}
@@ -108,7 +111,7 @@ There are hundreds, if not thousands of things to learn. There are hundreds, if 
     Force & Particle & Affects \\
     \midrule
     strong & gluon & nucleons/quarks \\
-    weak & W+, W-, Z boson & hadrons/leptons/mesons \\
+    weak & W\SP{+}, W\SP-, Z boson & hadrons/mesons \\
     gravity & graviton & matter \\
     electromagnetic & $\gamma$ photon & charged \\
     \bottomrule

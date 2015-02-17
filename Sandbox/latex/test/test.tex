@@ -1,0 +1,500 @@
+%%!TEX TS-program = xelatexmk
+\documentclass[bidi]{tufte-handout}
+% For syntax trees
+\usepackage{qtree}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{TeX Gyre Schola}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{TeX Gyre Heros}
+\setmonofont[Scale=MatchLowercase]{TeX Gyre Cursor}
+
+% Set up for Biblical Hebrew
+\TeXXeTstate=1
+\newfontfamily{\sbl}[Script=Hebrew]{SBL Hebrew}
+
+\usepackage{amsmath}
+\usepackage{booktabs} % for tables
+% Style for linguistic terms
+\newcommand{\jgn}[1]{\textbf{\textsc{#1}}} 
+%\newcommand{\jgn}[1]{\textsc{#1}} 
+% Linguistic environments
+\usepackage{covington}
+% Rename “Figure” to “Tree”
+\renewcommand{\figurename}{Tree}
+%\renewcommand{\tablename}{Tree}
+
+\title{OT 404/704 -- Week 5 Lecture}
+\author{Kirk E. Lowery}
+
+\begin{document}
+\maketitle
+
+\section{Agenda}
+
+\begin{itemize}
+ \item {\bf [Quiz]} \\
+   \citealt[51--66]{Christo-H.J.-van-der-Merwe:1999rm} \\
+   \citealt[6--17, 65--70, 134--139]{Saussure:1998rm} \\
+   \citealt[71--91]{Payne:1997zr} \\
+   \citealt{Bandstra:1992yq} \\
+   \citealt{Jones:1980kx} \\
+   \citealt[1--20]{Robert-D.-Van-Valin:2001yq}
+ \item {\bf [Reading Assignment]}: 90 pp. \\
+   \citealt{Lowery:1999kx}: 22 pp. \\
+   \citealt[100--135]{Lyons1981}: 35 pp.\\
+   \citealt[1--33]{Chomsky:1957vn}: 33 pp.\\
+  \item {\bf [Lecture]} \\
+ \item {\bf [Praxis]} \\
+       Analyze Dt 26:17--19
+ \item {\bf [Assignment]} \\
+       Analyze Psalm 1
+\end{itemize}
+
+\section{Analysis of Dt 26:17--19}
+
+This passage is actually just two long clauses, with the second clause crossing a verse boundary. It is also an example of “discontinuous” clauses, where one clause is cut up by another clause.
+
+\smallskip
+\setRL
+{\Large\sbl
+‏אֶת־יְהוָ֥ה הֶאֱמַ֖רְתָּ הַיּ֑וֹם לִהְיוֹת֩ לְךָ֨ לֵֽאלֹהִ֜ים \\
+‏וְלָלֶ֣כֶת בִּדְרָכָ֗יו \\ 
+‏וְלִשְׁמֹ֨ר חֻקָּ֧יו וּמִצְוֹתָ֛יו וּמִשְׁפָּטָ֖יו \\
+‏וְלִשְׁמֹ֥עַ בְּקֹלֽוֹ׃ \\ 
+‏וַֽיהוָ֞ה הֶאֱמִֽירְךָ֣ הַיּ֗וֹם \\ 
+‏לִהְי֥וֹת לוֹ֙ לְעַ֣ם סְגֻלָּ֔ה \\ 
+‏כַּאֲשֶׁ֖ר דִּבֶּר־לָ֑ךְ \\ 
+‏וְלִשְׁמֹ֖ר כָּל־מִצְוֹתָֽיו׃ \\ 
+‏וּֽלְתִתְּךָ֣ עֶלְי֗וֹן עַ֤ל כָּל־הַגּוֹיִם֙ \\ 
+‏אֲשֶׁ֣ר עָשָׂ֔ה \\ 
+‏לִתְהִלָּ֖ה וּלְשֵׁ֣ם וּלְתִפְאָ֑רֶת \\ 
+‏וְלִֽהְיֹתְךָ֧ עַם־קָדֹ֛שׁ לַיהוָ֥ה אֱלֹהֶ֖יךָ \\ 
+‏כַּאֲשֶׁ֥ר דִּבֵּֽר׃ \\ 
+}\setLR
+
+\newthought{Tree~\protect\ref{tree:CLdt26:17:1a}} is found in direct speech. Thus we are not surprised to find the clause beginning with the direct object. There is no explicit subject, since the \jgn{S}, Moses’ audience, has already been established earlier. The \jgn{V} is a perfect, with the action occurring in past time. Although {\sbl ‏יְהוָ֥ה}, a proper noun, is as definite as one can get, it still is marked by {\sbl ‏אֶת־}, the so-called direct object marker. It raises the question as to what the real function of {\sbl ‏אֶת־} is. Certainly it is associated with definiteness. But does it \emph{mark} definiteness as well as accusativity?
+
+\begin{marginfigure}
+\Tree
+[.CL
+  [.PP
+    [.pp {\ldots} ]
+  ]
+  [.ADV
+    [.np
+      [.np {\sbl ‏יּ֜וֹם \\ \emph{(to)day}} ]
+      [.art {\sbl ‏הַ \\ \emph{the}} ]
+    ]
+  ]
+  [.V
+    [.vp {\sbl ‏הֶאֱמַ֖רְתָּ \\ \emph{you declared}} ]
+  ]
+  [.O
+    [.np
+      [.np {\sbl ‏יְהוָ֥ה \\ \emph{the Lord}} ]
+      [.om {\sbl ‏אֶת־ \\ \emph{OBJ}} ]
+    ]
+  ]
+]
+\caption{Dt 26:17a}
+\label{tree:CLdt26:17:1a}
+\end{marginfigure}
+
+The \jgn{ADV} constituent is a noun with the article. There are many examples of anartherous nouns functioning as \jgn{ADV}s, so we tentatively conclude that articular nouns are not a grammaticalization of the adverbial function.
+
+The \jgn{PP} constituent is actually a complex of four parallel \jgn{pp}. They are parallel because each prepositional object is an infinitival \jgn{CL} with {\sbl ‏לִ} as the preposition. Those prepositions modify the main \jgn{V}, {\sbl ‏הֶאֱמַ֖רְתָּ} \emph{you declared}. Each \jgn{pp} contains the content of what the Israelites “declared.”
+
+\begin{marginfigure}
+\Tree
+[.pp
+  [.np
+    [.CL
+      [.PP
+        [.pp
+          [.np {\sbl ‏אלֹהִ֜ים \\ \emph{God}} ]
+          [.pp {\sbl ‏לֵֽ \\ \emph{to}} ]
+        ]
+      ]
+      [.PP
+        [.pp
+          [.np {\sbl ‏ךָ֨ \\ \emph{you}} ]
+          [.pp {\sbl ‏לְ \\ \emph{to}} ]
+        ]
+      ]
+      [.V
+        [.vp {\sbl ‏הְיוֹת֩ \\ \emph{be}} ]
+      ]
+    ]
+  ]
+  [.pp {\sbl ‏לִ \\ \emph{to}} ]
+]
+\caption{Dt 26:17b}
+\label{tree:CLdt26:17:1b}
+\end{marginfigure}
+
+The infinitival \jgn{CL} (Tree~\ref{tree:CLdt26:17:1b}) uses the standard Hebrew idiom for the English \emph{to have}: the verb {\sbl ‏היה} plus the preposition {\sbl ‏ל}.
+
+\begin{marginfigure}
+\Tree
+[.pp
+  [.np
+    [.CL
+      [.PP
+        [.pp
+          [.np
+            [.np {\sbl ‏ו \\ \emph{his}} ]
+            [.np {\sbl ‏דְרָכָ֗י \\ \emph{ways}} ]
+          ]
+          [.pp {\sbl ‏בִּ \\ \emph{in}} ]
+        ]
+      ]
+      [.V
+        [.vp {\sbl ‏לֶ֣כֶת \\ \emph{walk}} ]
+      ]
+    ]
+  ]
+  [.pp {\sbl ‏לָ \\ \emph{to}} ]
+]
+\caption{Dt 26:17c}
+\label{tree:CLdt26:17:1c}
+\end{marginfigure}
+
+\begin{figure}[h]
+\Tree
+[.pp
+  [.np
+    [.CL
+      [.O
+        [.np
+          [.np
+            [.np {\sbl ‏ו \\ \emph{his}} ]
+            [.np {\sbl ‏מִשְׁפָּטָ֖י \\ \emph{judgments}} ]
+          ]
+          [.cj {\sbl ‏וּ \\ \emph{and}} ]
+          [.np
+            [.np {\sbl ‏ו \\ \emph{his}} ]
+            [.np {\sbl ‏מִצְוֹתָ֛י \\ \emph{commands}} ]
+          ]
+          [.cj {\sbl ‏וּ \\ \emph{and}} ]
+          [.np
+            [.np {\sbl ו \\ \emph{his}} ]
+            [.np {\sbl ‏חֻקָּ֧י \\ \emph{statues}} ]
+          ]
+        ]
+      ]
+      [.V
+        [.vp {\sbl ‏שְׁמֹ֨ר \\ \emph{keep}} ]
+      ]
+    ]
+  ]
+  [.pp {\sbl ‏לְ \\ \emph{to}} ]
+]
+\caption{Dt 26:17d}
+\label{tree:CLdt26:17:1d}
+\end{figure}
+
+The three \jgn{np}s in tree~\ref{tree:CLdt26:17:1d} that make up the \jgn{O} are definite nouns, since they are suffixed. Yet, strangely, there is no definite direct object marker. This suggests that {\sbl ‏אֶת} is not, first and foremost, a marker of definiteness. One can have a definite direct object without {\sbl ‏אֶת}.
+
+\begin{marginfigure}[0.15in]
+\Tree
+[.pp
+  [.np
+    [.CL
+      [.PP
+        [.np
+          [.np {\sbl ‏ֽוֹ׃ \\ \emph{his}} ]
+          [.np {\sbl ‏קֹל \\ \emph{voice}} ]
+        ]
+        [.pp {\sbl ‏בְּ \\ \emph{on}} ]
+      ]
+      [.V
+        [.vp {\sbl ‏שְׁמֹ֥עַ \\ \emph{listen}} ]
+      ]
+    ]
+  ]
+  [.pp {\sbl ‏לִ \\ \emph{to}} ]
+]
+\caption{Dt 26:17e}
+\label{tree:CLdt26:17:1e}
+\end{marginfigure}
+
+The \jgn{V} in tree~\ref{tree:CLdt26:17:1e} is a good illustration of mapping from one language’s syntax to another. In English we would say either \emph{listen to his voice}, or understanding this construction to be an idiom translate it as \emph{obey his voice}. In the first instance, the verb takes the preposition \emph{to}; in the second, it takes the object only without a preposition. In Hebrew, however, the verb takes the preposition {\sbl ‏בְּ}, which is not intuitive. But we should not conclude that {\sbl ‏בְּ} is a marker of the direct object! It is still a preposition and it is a very ordinary \jgn{pp}.
+
+\newthought{The second clause} (Tree~\ref{tree:CLdt26:18-19:1a}) of this passage uses exactly the same \jgn{V} as the first clause. It is long and complex, for it crosses the verse boundary between v 18 and v 19. This is not rare, but is unusual. Its structure is almost exactly the same as clause 1, with the same constituents in the same order, with only the addition of an explicit \jgn{S} at the clause-initial slot instead of the \jgn{O}.
+
+\begin{marginfigure}
+\Tree
+[.CL
+  [.PP {\ldots} ]
+  [.ADV
+    [.np
+      [.np {\sbl ‏יּ֗וֹם \\ \emph{(to)day}} ]
+      [.art {\sbl ‏הַ \\ \emph{the}} ]
+    ]
+  ]
+  [.O
+    [.np {\sbl ‏ךָ֣ \\ \emph{(to) you}} ]
+  ]
+  [.V
+    [.vp {\sbl ‏הֶאֱמִֽירְ \\ \emph{declared}} ]
+  ]
+  [.S
+    [.np {\sbl ‏יהוָ֞ה \\ \emph{The Lord}} ]
+  ]
+]
+\caption{Dt 26:18-19a}
+\label{tree:CLdt26:18-19:1a}
+\end{marginfigure}
+
+The \jgn{PP} constituent consists of four \jgn{pp}s, with the object of each of the prepositions being an infinitive construct, in exact parallel with the previous clause. Obviously, this parallel syntactic structure was no accident.
+
+\begin{figure}
+\Tree
+[.pp
+  [.np
+    [.CL
+      [.PP
+        [.pp
+          [.relp
+            [.CL
+              [.PP
+                [.pp
+                  [.np {\sbl ‏֑ךְ \\ \emph{you}} ]
+                  [.pp {\sbl ‏לָ֑ \\ \emph{to}} ]
+                ]
+              ]
+              [.V
+                [.vp {\sbl ‏דִּבֶּר־ \\ \emph{he promised}} ]
+              ]
+            ]
+            [. {\sbl ‏אֲשֶׁ֖ר \\ \emph{\#\#\#}} ]
+          ]
+          [.pp {\sbl ‏כַּ \\ \emph{as}} ]
+        ]
+      ]
+      [.PP
+        [.pp
+          [.np
+            [.np {\sbl ‏סְגֻלָּ֔ה \\ \emph{possession}} ]
+            [.np {\sbl ‏עַ֣ם \\ \emph{people}} ]
+          ]
+          [.pp {\sbl ‏לְ \\ \emph{to}} ]
+        ]
+      ]
+      [.PP
+        [.pp
+          [.np {\sbl ‏וֹ֙ \\ \emph{him}} ]
+          [.pp {\sbl ‏ל \\ \emph{to}} ]
+        ]
+      ]
+      [.V
+        [.vp {\sbl ‏הְי֥וֹת \\ \emph{be}} ]
+      ]
+    ]
+  ]
+  [.pp {\sbl ‏לִ \\ \emph{to}} ]
+]
+\caption{Dt 26:18-19b}
+\label{tree:CLdt26:18-19:1b}
+\end{figure}
+
+Tree~\ref{tree:CLdt26:18-19:1b} is a good example of \jgn{embedding}. Languages often nest one syntactic structure inside of another, sometimes to three and four levels deep. In this tree we have \jgn{CL}s and \jgn{pp} nested two deep. Parallels to the previous clause continue, where the first infinitival clause of both clauses is {\sbl  ‏ִהְי֥וֹת}. The relative pronoun sits in the slot for the prepositional object, which is normally a position filled by a nominal. The relative introduces a finite verbal clause using the perfect, in this case. We have a construct \emph{nomen regens} in {\sbl ‏עַ֣ם}. A common use of the \emph{nomen rectum} (that is, the noun in the absolute state following the construct noun) is to use that noun as an attributive to the \emph{nomen regens}. So \emph{people of possession} becomes \emph{possessed people} (in contrast to a people who are not claimed by the Lord).
+
+\begin{marginfigure}
+\Tree
+[.pp
+ [.np
+   [.CL
+     [.O
+      [.np
+        [.np
+          [.np {\sbl ‏ו׃ \\ \emph{his}} ]
+          [.np {\sbl ‏מִצְוֹתָֽי \\ \emph{commands}} ]
+        ]
+        [.np {\sbl ‏כָּל־ \\ \emph{all of}} ]
+      ]
+     ]
+     [.V
+       [.vp {\sbl ‏שְׁמֹ֖ר \\ \emph{keep}} ]
+     ]
+   ]
+ ]
+ [.pp {\sbl ‏לִ \\ \emph{to}} ]
+]
+\caption{Dt 26:18-19c}
+\label{tree:CLdt26:18-19:1c}
+\end{marginfigure}
+
+Tree~\ref{tree:CLdt26:18-19:1c} parallels Tree~\ref{tree:CLdt26:17:1d} except that the \jgn{O} has only one \jgn{np} instead of three. The infinitival clause is parallel to the previous clause with the same verb.
+
+\begin{marginfigure}
+\Tree
+[.pp
+  [.CL
+    [.PP {\ldots} ]
+    [.O2 {\ldots} ]
+    [.O
+      [.np {\sbl ‏ךָ֣ \\ \emph{you}} ]
+    ]
+    [.V
+      [.vp {\sbl ‏תִתְּ \\ \emph{set}} ]
+    ]
+  ]
+  [.pp {\sbl ‏לְ \\ \emph{to}} ]
+]
+\caption{Dt 26:18-19d}
+\label{tree:CLdt26:18-19:1d}
+\end{marginfigure}
+
+Tree~\ref{tree:CLdt26:18-19:1d} is an example of a \jgn{V} that takes two objects. Regardless of the semantic roles and their mapping to English prepositional phrases, these two phrases are simply added to the stream of clause constituents. Although \jgn{O2} could be adverbial, the semantics of {\sbl ‏תִתְּ} \emph{to give} suggests a \jgn{patient}, that is, \emph{what is given}.
+
+\begin{marginfigure}
+\Tree
+    [.O2
+      [.adjp
+        [.pp
+          [.np
+            [.np
+              [.np
+                [.relp
+                  [.CL
+                    [.V
+                      [.vp {\sbl ‏עָשָׂ֔ה \\ \emph{he made}} ]
+                    ]
+                  ]
+                  [.rel {\sbl ‏אֲשֶׁ֣ר \\ \emph{\#\#\#}} ] 
+                ]
+                [.np {\sbl ‏גּוֹיִם֙ \\ \emph{nations}} ]
+              ]
+              [. {\sbl ‏הַ \\ \emph{the}} ]
+            ]
+            [. {\sbl ‏כָּל־ \\ \emph{all of}} ]
+          ]
+          [.pp {\sbl ‏עַ֤ל \\ \emph{over}} ]
+        ]
+        [.adjp {\sbl ‏עֶלְי֗וֹן \\ \emph{high}} ]
+      ]
+    ]
+\caption{Dt 26:18-19e}
+\label{tree:CLdt26:18-19:1e}
+\end{marginfigure}
+
+Again we observe the use of a relative clause in Tree~\ref{tree:CLdt26:18-19:1e}, where the pronoun sits in the attributive slot, giving a further specification of {\sbl ‏גּוֹיִם֙} \emph{nations}. The use of a \jgn{pp} to modify {\sbl ‏עֶלְי֗וֹן} \emph{high} is also noteworthy. It is tempting to promote the \jgn{pp} to \jgn{adjp}, but we resisted.
+
+\begin{marginfigure}
+\Tree
+[.PP
+  [.pp
+    [.pp
+      [.np {\sbl ‏תִפְאָ֑רֶת \\ \emph{glory}} ]
+      [.pp {\sbl ‏לְ \\ \emph{for}} ]
+    ]
+    [.cj {\sbl ‏וּ \\ \emph{and}} ]
+    [.pp
+      [.np {\sbl ‏שֵׁ֣ם \\ \emph{name}} ]
+      [.pp {\sbl ‏לְ \\ \emph{for}} ]
+    ]
+    [.cj {\sbl ‏וּ \\ \emph{and}} ]
+    [.pp
+      [.np {\sbl ‏ִתְהִלָּ֖ה \\ \emph{praise}} ]
+      [.pp {\sbl ‏לִ \\ \emph{for}} ]
+    ]
+  ]
+]
+\caption{Dt 26:18-19f}
+\label{tree:CLdt26:18-19:1f}
+\end{marginfigure}
+
+Tree~\ref{tree:CLdt26:18-19:1f} is a continuation of Tree~\ref{tree:CLdt26:18-19:1d}. The three \jgn{pp}s are grouped together because they are exactly the same except for their lemmas. This is a common practice in creating trees, to make such repetitions explicit in the analysis. We have seen enough conjunctions now to be able to give a definition --- or at least a description --- of the conjunction {\sbl ‏וְ} \emph{and}: this conjunction is used at both the phrase and clause levels. It’s function is to coordinate two “equal” syntactic units. It has no other function, meaning or purpose.
+
+\begin{figure}[ht]
+\Tree
+[.pp
+  [.CL {\ldots} ]
+  [.pp {\sbl ‏לִֽ \\ \emph{to}} ]
+]
+\caption{Dt 26:18-19g}
+\label{tree:CLdt26:18-19:1g}
+\end{figure}
+
+\newthought{With Tree~\protect\ref{tree:CLdt26:18-19:1g}} we move up one level of nesting and return to the last of the infinitival clauses in the \jgn{PP} of Tree~\ref{tree:CLdt26:18-19:1a}. 
+
+\begin{figure}[ht]
+\footnotesize
+\Tree
+  [.CL
+    [.PP
+      [.pp
+        [.relp
+          [.CL
+            [.V
+              [.vp {\sbl ‏דִּבֵּֽר׃ \\ \emph{he said}} ]
+           ]
+          ]
+          [. {\sbl ‏אֲשֶׁ֥ר \\ \emph{\#\#\#}} ]
+        ]
+        [.pp {\sbl ‏כַּ \\ \emph{as}} ]
+      ]
+    ]
+    [.PP
+      [.pp
+        [.np
+          [.np
+            [.np {\sbl ‏ךָ \\ \emph{your}} ]
+            [.np {\sbl ‏אֱלֹהֶ֖י \\ \emph{God}} ]
+          ]
+          [.np {\sbl ‏יהוָ֥ה \\ \emph{the Lord}} ]
+        ]
+        [.pp {\sbl ‏לַ \\ \emph{to}} ]
+      ]
+    ]
+    [.O
+      [.np
+        [.adjp {\sbl ‏קָדֹ֛שׁ \\ \emph{holy}} ]
+        [.np {\sbl ‏עַם־ \\ \emph{people}} ]
+      ]
+    ]
+    [.S
+     [.np {\sbl ‏ךָ֧ \\ \emph{you}} ]
+    ]
+    [.V
+      [.vp {\sbl ‏ִֽהְיֹתְ \\ \emph{be}} ]
+    ]
+  ]
+\caption{Dt 26:18-19h}
+\label{tree:CLdt26:18-19:1h}
+\end{figure}
+
+There are two ways of understanding the \jgn{CL} of Tree~\ref{tree:CLdt26:18-19:1h}. We can, as it stands, understand it to mean \emph{\ldots that you may be a holy people to the Lord your God\ldots}. Alternatively, \emph{\ldots that you may be a holy to the Lord your God people\ldots}. In this case, the tree changes to Tree~\ref{tree:CLdt26:18-19:1i}.
+
+The difference in meaning is subtle, but not insignificant. Tree~\ref{tree:CLdt26:18-19:1i} shows a \jgn{deep structure} clause that is realized on the surface as an \jgn{adjp} consisting of an \jgn{adj} modified by a \jgn{pp}. The underlaying meaning is approximately \emph{\ldots a people that is holy to the Lord your God (and not holy to some other God)}. The alternate understanding of Tree~\ref{tree:CLdt26:18-19:1h} is something like \emph{\ldots that you may be to the Lord your God a holy people}. In this understanding, the idea of Israel being holy to Yahweh and not Ba’al, Dagon, Marduk or some other deity is not highlighted. On what grounds may we make a choice between these two analyses? The only criterion I have yet to adduce is that of adjacency: Tree~\ref{tree:CLdt26:18-19:1i} is to be preferred, highlighting the exclusivity of Israel to Yahweh alone.
+
+\begin{marginfigure}
+\Tree
+    [.O
+      [.np
+        [.adjp 
+          [.pp
+            [.np
+              [.np
+                [.np {\sbl ‏ךָ \\ \emph{your}} ]
+                [.np {\sbl ‏אֱלֹהֶ֖י \\ \emph{God}} ]
+              ]
+              [.np {\sbl ‏יהוָ֥ה \\ \emph{the Lord}} ]
+            ]
+            [.pp {\sbl ‏לַ \\ \emph{to}} ]
+          ]
+          [.adjp {\sbl ‏קָדֹ֛שׁ \\ \emph{holy}} ]
+        ]
+        [.np {\sbl ‏עַם־ \\ \emph{people}} ]
+      ]
+    ]
+\caption{Dt 26:18-19i}
+\label{tree:CLdt26:18-19:1i}
+\end{marginfigure}
+
+\bibliography{OT704}
+\bibliographystyle{plainnat}
+
+\end{document}
